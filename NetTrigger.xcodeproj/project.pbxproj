@@ -45,6 +45,8 @@
 /* Begin PBXBuildFile section */
 		035DE5701191A11D00165D40 /* PreferenceController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 035DE56F1191A11D00165D40 /* PreferenceController.rb */; };
 		035DE5721191A16C00165D40 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035DE5711191A16C00165D40 /* Preferences.xib */; };
+		035DE5A91191BBB700165D40 /* network.png in Resources */ = {isa = PBXBuildFile; fileRef = 035DE5A81191BBB700165D40 /* network.png */; };
+		035DE5D51191BFD000165D40 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 035DE5D41191BFD000165D40 /* icon.icns */; };
 		039A1B22119066F400D46E4A /* NetTriggerDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 039A1B21119066F400D46E4A /* NetTriggerDelegate.rb */; };
 		039A1B2F1190672B00D46E4A /* WifiMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A1B2E1190672B00D46E4A /* WifiMonitor.m */; };
 		039A1B341190676D00D46E4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039A1B331190676D00D46E4A /* SystemConfiguration.framework */; };
@@ -71,6 +73,8 @@
 /* Begin PBXFileReference section */
 		035DE56F1191A11D00165D40 /* PreferenceController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PreferenceController.rb; sourceTree = "<group>"; };
 		035DE5711191A16C00165D40 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		035DE5A81191BBB700165D40 /* network.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = network.png; sourceTree = "<group>"; };
+		035DE5D41191BFD000165D40 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		039A1B21119066F400D46E4A /* NetTriggerDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = NetTriggerDelegate.rb; sourceTree = "<group>"; };
 		039A1B2D1190672B00D46E4A /* WifiMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiMonitor.h; sourceTree = "<group>"; };
 		039A1B2E1190672B00D46E4A /* WifiMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiMonitor.m; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				035DE5D41191BFD000165D40 /* icon.icns */,
+				035DE5A81191BBB700165D40 /* network.png */,
 				2BFA9DA510CDF852007972A1 /* MainMenu.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -263,6 +269,8 @@
 				039A1B22119066F400D46E4A /* NetTriggerDelegate.rb in Resources */,
 				035DE5701191A11D00165D40 /* PreferenceController.rb in Resources */,
 				035DE5721191A16C00165D40 /* Preferences.xib in Resources */,
+				035DE5A91191BBB700165D40 /* network.png in Resources */,
+				035DE5D51191BFD000165D40 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

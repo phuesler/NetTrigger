@@ -1,5 +1,5 @@
 class NetTriggerDelegate
-  attr_accessor :preferenceController
+  attr_accessor :preferenceController, :statusBarMenu
     
   def applicationDidFinishLaunching(notification)
     @monitor = WifiMonitor.alloc.initWithDelegate(self)
@@ -7,6 +7,7 @@ class NetTriggerDelegate
                                                   selector: "checkTaskStatus:".to_sym,
                                                   name: NSTaskDidTerminateNotification,
                                                   object: nil)
+    activateStatusMenu
     return self;
   end
   
@@ -30,5 +31,19 @@ class NetTriggerDelegate
      NSTask.launchedTaskWithLaunchPath("/usr/sbin/scselect",arguments:[NSUserDefaults.standardUserDefaults['location']])
    end
    NSLog("hello wifi changed to #{ssid}")
+  end
+
+  def activateStatusMenu
+    statusBarItem = NSStatusBar.systemStatusBar.statusItemWithLength(NSVariableStatusItemLength)
+    statusBarItem.setToolTip("NetTrigger")
+    statusBarItem.setHighlightMode(true)
+    statusBarItem.setEnabled(true)
+    
+    statusImage = NSImage.alloc.initWithContentsOfFile(
+                                  NSBundle.mainBundle.pathForResource("network", ofType: "png")
+                                  )
+    statusBarItem.setImage(statusImage)
+    statusBarItem.setAlternateImage(statusImage)
+    statusBarItem.setMenu(statusBarMenu)
   end
 end
