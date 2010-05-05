@@ -61,6 +61,7 @@
 		035DE5D51191BFD000165D40 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 035DE5D41191BFD000165D40 /* icon.icns */; };
 		035DE6D311921C2300165D40 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035DE6D211921C2300165D40 /* Sparkle.framework */; };
 		035DE6ED11921C9800165D40 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 035DE6D211921C2300165D40 /* Sparkle.framework */; };
+		035DE75211922CE300165D40 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 035DE75111922CE300165D40 /* dsa_pub.pem */; };
 		039A1B22119066F400D46E4A /* NetTriggerDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 039A1B21119066F400D46E4A /* NetTriggerDelegate.rb */; };
 		039A1B2F1190672B00D46E4A /* WifiMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A1B2E1190672B00D46E4A /* WifiMonitor.m */; };
 		039A1B341190676D00D46E4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039A1B331190676D00D46E4A /* SystemConfiguration.framework */; };
@@ -117,6 +118,7 @@
 		035DE5A81191BBB700165D40 /* network.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = network.png; sourceTree = "<group>"; };
 		035DE5D41191BFD000165D40 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		035DE6D211921C2300165D40 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		035DE75111922CE300165D40 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		039A1B21119066F400D46E4A /* NetTriggerDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = NetTriggerDelegate.rb; sourceTree = "<group>"; };
 		039A1B2D1190672B00D46E4A /* WifiMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiMonitor.h; sourceTree = "<group>"; };
 		039A1B2E1190672B00D46E4A /* WifiMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiMonitor.m; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				035DE75111922CE300165D40 /* dsa_pub.pem */,
 				035DE5D41191BFD000165D40 /* icon.icns */,
 				035DE5A81191BBB700165D40 /* network.png */,
 				2BFA9DA510CDF852007972A1 /* MainMenu.xib */,
@@ -317,6 +320,7 @@
 				035DE5721191A16C00165D40 /* Preferences.xib in Resources */,
 				035DE5A91191BBB700165D40 /* network.png in Resources */,
 				035DE5D51191BFD000165D40 /* icon.icns in Resources */,
+				035DE75211922CE300165D40 /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
