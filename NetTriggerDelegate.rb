@@ -8,13 +8,13 @@ class NetTriggerDelegate
                                                   name: NSTaskDidTerminateNotification,
                                                   object: nil)
     activateStatusMenu
-    return self;
+  end
+  
+  def preferenceController
+    @preferenceController ||= PreferenceController.alloc.init
   end
   
   def showPreferencePanel(sender)
-    if(!preferenceController)
-      preferenceController = PreferenceController.alloc.init
-    end
     preferenceController.showWindow(self)
   end
   
@@ -27,10 +27,11 @@ class NetTriggerDelegate
   end
   
   def wifiChangedTo(ssid)
-   if NSUserDefaults.standardUserDefaults['ssid'] == ssid
-     NSTask.launchedTaskWithLaunchPath("/usr/sbin/scselect",arguments:[NSUserDefaults.standardUserDefaults['location']])
+   rule = preferenceController.ruleForSSID(ssid)
+   if rule
+     NSTask.launchedTaskWithLaunchPath("/usr/sbin/scselect",
+                                      arguments:[rule['location']])
    end
-   NSLog("hello wifi changed to #{ssid}")
   end
 
   def activateStatusMenu
