@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		035DE7131192202D00165D40 /* Release */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 035DE71E1192205C00165D40 /* Build configuration list for PBXAggregateTarget "Release" */;
+			buildPhases = (
+			);
+			dependencies = (
+				035DE7171192203400165D40 /* PBXTargetDependency */,
+				035DE7191192203800165D40 /* PBXTargetDependency */,
+			);
+			name = Release;
+			productName = Release;
+		};
 		172754BD107597F200D0347B /* Unit Tests */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 172754C7107597F400D0347B /* Build configuration list for PBXAggregateTarget "Unit Tests" */;
@@ -47,6 +59,8 @@
 		035DE5721191A16C00165D40 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035DE5711191A16C00165D40 /* Preferences.xib */; };
 		035DE5A91191BBB700165D40 /* network.png in Resources */ = {isa = PBXBuildFile; fileRef = 035DE5A81191BBB700165D40 /* network.png */; };
 		035DE5D51191BFD000165D40 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 035DE5D41191BFD000165D40 /* icon.icns */; };
+		035DE6D311921C2300165D40 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035DE6D211921C2300165D40 /* Sparkle.framework */; };
+		035DE6ED11921C9800165D40 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 035DE6D211921C2300165D40 /* Sparkle.framework */; };
 		039A1B22119066F400D46E4A /* NetTriggerDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 039A1B21119066F400D46E4A /* NetTriggerDelegate.rb */; };
 		039A1B2F1190672B00D46E4A /* WifiMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A1B2E1190672B00D46E4A /* WifiMonitor.m */; };
 		039A1B341190676D00D46E4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039A1B331190676D00D46E4A /* SystemConfiguration.framework */; };
@@ -58,13 +72,40 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		035DE7161192203400165D40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = NetTrigger;
+		};
+		035DE7181192203800165D40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D1A51A510A4FF640046A98A;
+			remoteInfo = Embed;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		035DE6EC11921C4B00165D40 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		172754B4107597CF00D0347B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				035DE6ED11921C9800165D40 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +116,7 @@
 		035DE5711191A16C00165D40 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		035DE5A81191BBB700165D40 /* network.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = network.png; sourceTree = "<group>"; };
 		035DE5D41191BFD000165D40 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		035DE6D211921C2300165D40 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		039A1B21119066F400D46E4A /* NetTriggerDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = NetTriggerDelegate.rb; sourceTree = "<group>"; };
 		039A1B2D1190672B00D46E4A /* WifiMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiMonitor.h; sourceTree = "<group>"; };
 		039A1B2E1190672B00D46E4A /* WifiMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiMonitor.m; sourceTree = "<group>"; };
@@ -102,6 +144,7 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */,
 				039A1B341190676D00D46E4A /* SystemConfiguration.framework in Frameworks */,
+				035DE6D311921C2300165D40 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +180,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				035DE6D211921C2300165D40 /* Sparkle.framework */,
 				4DE3BE130D8651D900ECA448 /* MacRuby.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				039A1B331190676D00D46E4A /* SystemConfiguration.framework */,
@@ -227,6 +271,7 @@
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
 				172754B4107597CF00D0347B /* CopyFiles */,
+				035DE6EC11921C4B00165D40 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -254,6 +299,7 @@
 				172754BD107597F200D0347B /* Unit Tests */,
 				4D1A51A110A4FF5D0046A98A /* Compile */,
 				4D1A51A510A4FF640046A98A /* Embed */,
+				035DE7131192202D00165D40 /* Release */,
 			);
 		};
 /* End PBXProject section */
@@ -314,7 +360,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# The macruby_deploy command-line tool with the --embed argument will make sure the MacRuby framework will be embedded in your .app. Default options will be used. Pass the -h option to get more information.\nPATH=\"$PATH:/usr/local/bin\" macruby_deploy --embed \"$TARGET_BUILD_DIR/$PROJECT_NAME.app\"";
+			shellScript = "# The macruby_deploy command-line tool with the --embed argument will make sure the MacRuby framework will be embedded in your .app. Default options will be used. Pass the -h option to get more information.\nPATH=\"$PATH:/usr/local/bin\" macruby_deploy --no-stdlib --embed \"$TARGET_BUILD_DIR/$PROJECT_NAME.app\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -329,6 +375,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		035DE7171192203400165D40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* NetTrigger */;
+			targetProxy = 035DE7161192203400165D40 /* PBXContainerItemProxy */;
+		};
+		035DE7191192203800165D40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D1A51A510A4FF640046A98A /* Embed */;
+			targetProxy = 035DE7181192203800165D40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -350,6 +409,27 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		035DE7141192202E00165D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Release;
+			};
+			name = Debug;
+		};
+		035DE7151192202E00165D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Release;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		172754BE107597F200D0347B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -420,6 +500,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/build/Debug\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -441,6 +522,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/build/Debug\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -478,6 +560,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		035DE71E1192205C00165D40 /* Build configuration list for PBXAggregateTarget "Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				035DE7141192202E00165D40 /* Debug */,
+				035DE7151192202E00165D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		172754C7107597F400D0347B /* Build configuration list for PBXAggregateTarget "Unit Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
