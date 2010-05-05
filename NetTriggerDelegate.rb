@@ -1,4 +1,6 @@
 class NetTriggerDelegate
+  attr_accessor :preferenceController
+    
   def applicationDidFinishLaunching(notification)
     @monitor = WifiMonitor.alloc.initWithDelegate(self)
     NSNotificationCenter.defaultCenter.addObserver(self,
@@ -6,6 +8,13 @@ class NetTriggerDelegate
                                                   name: NSTaskDidTerminateNotification,
                                                   object: nil)
     return self;
+  end
+  
+  def showPreferencePanel(sender)
+    if(!preferenceController)
+      preferenceController = PreferenceController.alloc.init
+    end
+    preferenceController.showWindow(self)
   end
   
   def checkTaskStatus(notification)
@@ -17,7 +26,9 @@ class NetTriggerDelegate
   end
   
   def wifiChangedTo(ssid)
-   NSTask.launchedTaskWithLaunchPath("/usr/sbin/scselect",arguments:["Automatic"])
+   if NSUserDefaults.standardUserDefaults['ssid'] == ssid
+     NSTask.launchedTaskWithLaunchPath("/usr/sbin/scselect",arguments:[NSUserDefaults.standardUserDefaults['location']])
+   end
    NSLog("hello wifi changed to #{ssid}")
   end
 end

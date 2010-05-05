@@ -37,7 +37,7 @@ void updateCallBack(SCDynamicStoreRef store, CFArrayRef changedKeys, void *info)
 - (void) setupWifiNotifications {
 	// get the dynamic store
 	SCDynamicStoreContext context = {0, self, NULL, NULL, NULL};
-	store = SCDynamicStoreCreate(NULL, (CFStringRef)@"HallenprojektStatusAppDelegate", updateCallBack, &context);
+	store = SCDynamicStoreCreate(NULL, (CFStringRef)@"WifiMonitor", updateCallBack, &context);
 	
 	NSArray *array = [NSArray arrayWithObject:WifiInterfaceName];
 	if (!SCDynamicStoreSetNotificationKeys(store, (CFArrayRef)array, NULL)) {

@@ -43,6 +43,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		035DE5701191A11D00165D40 /* PreferenceController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 035DE56F1191A11D00165D40 /* PreferenceController.rb */; };
+		035DE5721191A16C00165D40 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035DE5711191A16C00165D40 /* Preferences.xib */; };
 		039A1B22119066F400D46E4A /* NetTriggerDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 039A1B21119066F400D46E4A /* NetTriggerDelegate.rb */; };
 		039A1B2F1190672B00D46E4A /* WifiMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A1B2E1190672B00D46E4A /* WifiMonitor.m */; };
 		039A1B341190676D00D46E4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039A1B331190676D00D46E4A /* SystemConfiguration.framework */; };
@@ -67,6 +69,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		035DE56F1191A11D00165D40 /* PreferenceController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PreferenceController.rb; sourceTree = "<group>"; };
+		035DE5711191A16C00165D40 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		039A1B21119066F400D46E4A /* NetTriggerDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = NetTriggerDelegate.rb; sourceTree = "<group>"; };
 		039A1B2D1190672B00D46E4A /* WifiMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiMonitor.h; sourceTree = "<group>"; };
 		039A1B2E1190672B00D46E4A /* WifiMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiMonitor.m; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				039A1B21119066F400D46E4A /* NetTriggerDelegate.rb */,
+				035DE56F1191A11D00165D40 /* PreferenceController.rb */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				2BFA9DA510CDF852007972A1 /* MainMenu.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				035DE5711191A16C00165D40 /* Preferences.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -255,6 +261,8 @@
 				4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */,
 				2BFA9DA710CDF852007972A1 /* MainMenu.xib in Resources */,
 				039A1B22119066F400D46E4A /* NetTriggerDelegate.rb in Resources */,
+				035DE5701191A11D00165D40 /* PreferenceController.rb in Resources */,
+				035DE5721191A16C00165D40 /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
