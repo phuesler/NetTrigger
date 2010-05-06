@@ -12,6 +12,7 @@ class NetTriggerDelegate
   
   def showPreferencePanel(sender)
     preferenceController.showWindow(self)
+    preferenceController.window.makeKeyAndOrderFront(preferenceController)
   end
   
   def wifiChangedTo(ssid)
