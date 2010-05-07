@@ -7,7 +7,10 @@ class NetTriggerDelegate
   end
   
   def preferenceController
-    @preferenceController ||= PreferenceController.alloc.init
+    unless @preferenceController
+      @preferenceController = PreferenceController.alloc.init
+    end
+    @preferenceController
   end
   
   def showPreferencePanel(sender)
@@ -35,5 +38,10 @@ class NetTriggerDelegate
     statusBarItem.setImage(statusImage)
     statusBarItem.setAlternateImage(statusImage)
     statusBarItem.setMenu(statusBarMenu)
+  end
+  
+  def applicationShouldTerminate(sender)
+    preferenceController.saveSettings
+    return NSTerminateNow
   end
 end

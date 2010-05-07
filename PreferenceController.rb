@@ -1,11 +1,7 @@
 class PreferenceController < NSWindowController
   attr_accessor :rules
   
-  def rules
-    @rules ||= NSUserDefaults.standardUserDefaults['rules'] || []
-  end
-  
-  def store(sender)
+  def saveSettings
     NSUserDefaults.standardUserDefaults['rules'] = rules
   end
   
@@ -17,6 +13,7 @@ class PreferenceController < NSWindowController
     if(!super.initWithWindowNibName("Preferences"))
       return nil
     else
+      @rules ||= NSUserDefaults.standardUserDefaults['rules'] || []
       return self
     end
   end
