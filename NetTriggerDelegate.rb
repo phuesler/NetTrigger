@@ -11,8 +11,8 @@ class NetTriggerDelegate
   end
   
   def showPreferencePanel(sender)
+    NSApp.activateIgnoringOtherApps(true)
     preferenceController.showWindow(self)
-    preferenceController.window.makeKeyAndOrderFront(preferenceController)
   end
   
   def wifiChangedTo(ssid)
