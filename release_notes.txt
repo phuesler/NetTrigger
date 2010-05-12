@@ -1,5 +1,6 @@
-h1. <span>6.5.2010</span> Release 1.0.1
+h1. <span>12.05.2010</span> Release 1.0.4
 
 h2. Minor update
 
-A small cosmetic change
+* Changed the disk images background image
+* Moved download location

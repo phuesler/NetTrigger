@@ -6,13 +6,12 @@ require "choctop"
 require 'deploy/ftp_sync'
 require 'highline/import'
 
-module Appcast
-  def upload_appcast
-    passwd = ask("Password for ftp server please: ") { |q| q.echo = "x"}
-    ftp = FtpSync.new('ftp.huesler-informatik.ch', 'nettrigger@huesler-informatik.ch', passwd.chomp)
-    ftp.sync(build_path, '/downloads')
+class ChocTop
+  def user
+    @user ||= ask("User for server please: ")
   end
-  
+end
+module Appcast  
   def make_dmg_symlink
     FileUtils.chdir(build_path) do
       `rm '#{versionless_pkg_name}'` if File.exists?(versionless_pkg_name)
@@ -25,11 +24,10 @@ end
 ChocTop.new do |s|
   # Remote upload target (set host if not same as Info.plist['SUFeedURL'])
   # s.host     = 'nettrigger.com'
-  # s.remote_dir = '/var/www/applications/nettrigger'
   s.build_target = 'Release'
-
+  s.remote_dir = '/home/mosphere/www/applications.huesler-informatik.ch/downloads/NetTrigger'
   # Custom DMG
-  # s.background_file = "background.jpg"
+  s.background_file = "dmg_background.png"
   # s.app_icon_position = [100, 90]
   # s.applications_icon_position =  [400, 90]
   # s.volume_icon = "dmg.icns"
